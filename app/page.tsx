@@ -18,13 +18,13 @@ export default function Home() {
         </h2>
       </div>
       <Carousel></Carousel>
-      <div className="my-[8%]">
+      <div className="my-[10vw]">
         <div className="text-center flex-col flex w-full items-center justify-center">
           <div className="">
-            <h1 className="text-4xl font-montserrat font-semibold">
+            <h1 className="text-4xl font-poppins font-semibold">
               Discover the Best Travel
             </h1>
-            <h1 className="text-4xl font-montserrat font-semibold">
+            <h1 className="text-4xl font-poppins font-semibold">
               Deals of the Month
             </h1>
           </div>
@@ -38,7 +38,24 @@ export default function Home() {
       <div className="w-full flex items-center justify-center">
         <BestDealsSection></BestDealsSection>
       </div>
-      <Slider></Slider>
+      <div className="my-[15vw] px-[1vw] flex flex-col gap-2">
+        <div className="mb-[2vw]">
+          <div className="flex items-center w-full justify-between">
+            <h1 className="font-poppins text-4xl font-semibold">
+              Somewhere beyond the map, your Bali awaits.
+            </h1>
+            <button className="bg-white px-6 py-2 rounded-full border-2 font-montserrat text-base">
+              See all
+            </button>
+          </div>
+          <p className="font-poppins">
+            Explore untouched places, feel real Bali.
+          </p>
+        </div>
+        <div className="flex items-center ">
+          <Slider></Slider>
+        </div>
+      </div>
     </div>
   );
 }
