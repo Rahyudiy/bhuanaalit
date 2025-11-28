@@ -1,5 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import { Card } from "./Card";
+import { title } from "process";
+import { useEffect } from "react";
+import { revealAnimation } from "../lib/gsap";
 
 const CardProps = [
   {
@@ -29,16 +34,20 @@ const CardProps = [
 ];
 
 export const BestDealsSection = () => {
+  useEffect(() => {
+    revealAnimation();
+  }, []);
+
   return (
-    <div className="flex-row flex w-full items-center justify-center gap-10">
+    <div className="md:flex-row flex-col flex w-full items-center justify-center gap-10 reveal">
       <Image
         src={"/slides2.webp"}
         width={400}
         height={400}
-        className="rounded-2xl md:h-[55vw] h-[60vw] w-[25vw] object-cover"
+        className="rounded-2xl md:h-[55vw] h-screen w-full  md:w-[25vw] object-cover"
         alt="image"
       ></Image>
-      <div className="w-fit gap-10 justify-center items-center grid grid-cols-2">
+      <div className="w-fit gap-10 justify-center items-center grid md:grid-cols-2 grid-cols-1">
         {CardProps.map((item, i) => (
           <Card key={i} {...item} />
         ))}

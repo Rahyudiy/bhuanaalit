@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --font-poppins: var(--font-poppins);
   --font-montserrat: var(--font-montserrat);
+  --font-hedvigserif: var(--font-hedvig-serif);
 }
 
 body {

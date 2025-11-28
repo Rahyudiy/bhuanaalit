@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins, Montserrat } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Hedvig_Letters_Serif,
+  Montserrat,
+  Poppins,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +16,12 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
+const hedvigLettersSerif = Hedvig_Letters_Serif({
+  variable: "--font-hedvig-serif",
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -39,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${montserrat.variable} antialiased scroll-smooth`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${montserrat.variable} ${hedvigLettersSerif.variable} antialiased scroll-smooth`}
       >
         {children}
       </body>

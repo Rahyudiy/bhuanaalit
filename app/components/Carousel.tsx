@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { revealAnimation } from "../lib/gsap";
 import { Searchbar } from "./Searchbar";
 
 export const Carousel = () => {
@@ -13,6 +14,8 @@ export const Carousel = () => {
   );
 
   useEffect(() => {
+    revealAnimation();
+
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
     }, 3000); // Changed to 3000ms = 3 seconds
@@ -20,8 +23,8 @@ export const Carousel = () => {
   }, [slides.length]);
 
   return (
-    <div className="flex flex-col items-center">
-      <div className="relative w-full h-[25vw] overflow-hidden rounded-2xl bg-gray-100">
+    <div className="flex flex-col items-center reveal">
+      <div className="relative w-full md:h-[25vw] h-[80vw] overflow-hidden rounded-2xl bg-gray-100">
         {slides.map((slide, index) => (
           <div
             key={index}
