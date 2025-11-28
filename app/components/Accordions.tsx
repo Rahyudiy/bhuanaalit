@@ -22,9 +22,9 @@ export const Accordions = () => {
     },
   ];
 
-  const [open, setOpen] = useState(null);
+  const [open, setOpen] = useState<number | null>(null);
 
-  const toggleAccordion = (index) => {
+  const toggleAccordion = (index: number) => {
     setOpen(open === index ? null : index);
   };
 
