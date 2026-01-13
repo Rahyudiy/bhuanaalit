@@ -6,28 +6,28 @@ import { Card } from "./Card";
 
 const CardProps = [
   {
-    image: "/slides1.webp",
-    title: "NyangNyang Beach",
+    image: "/bukitcampuhan.jpg",
+    title: "Campuhan Hills",
     description:
-      "Escape to golden sands and cliffside views where the ocean meets silence, perfect for reflection and solitude.",
+      "Campuhan Hill Gianyar offers scenic ridge walks, lush valleys, sunrise views, peaceful atmosphere, and authentic Bali nature escape.",
   },
   {
-    image: "/slides2.webp",
-    title: "NyangNyang Beach",
+    image: "/penglipuran.jpg",
+    title: "Penglipuran Bamboo Forest",
     description:
-      "Escape to golden sands and cliffside views where the ocean meets silence, perfect for reflection and solitude.",
+      "Penglipuran Bamboo Forest showcases towering bamboo trees, cool air, and a calming ambiance reflecting Bali’s traditional and sustainable culture.",
   },
   {
-    image: "/slides3.webp",
-    title: "NyangNyang Beach",
+    image: "/tibubana.jpg",
+    title: "Tibumana Waterfall",
     description:
-      "Escape to golden sands and cliffside views where the ocean meets silence, perfect for reflection and solitude.",
+      "Tibumana Waterfall features a graceful single cascade, crystal-clear pool, and tranquil forest setting, perfect for relaxation and nature lovers.",
   },
   {
-    image: "/slides3.webp",
-    title: "NyangNyang Beach",
+    image: "/les.jpg",
+    title: "Les Waterfall",
     description:
-      "Escape to golden sands and cliffside views where the ocean meets silence, perfect for reflection and solitude.",
+      "Les Waterfall offers a serene natural escape with cascading streams, lush jungle surroundings, and a peaceful atmosphere in North Bali.",
   },
 ];
 

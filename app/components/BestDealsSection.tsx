@@ -1,32 +1,31 @@
 "use client";
 
 import Image from "next/image";
-import { Card } from "./Card";
-import { title } from "process";
 import { useEffect } from "react";
 import { revealAnimation } from "../lib/gsap";
+import { Card } from "./Card";
 
 const CardProps = [
   {
-    image: "/slides1.webp",
-    title: "NyangNyang Beach",
+    image: "/hidden01.jpg",
+    title: "Tukad Cepung Waterfall",
     description:
-      "Escape to golden sands and cliffside views where the ocean meets silence, perfect for reflection and solitude.",
+      "A surreal waterfall hidden inside a cave where sunlight beams slice through mist, creating a heavenly glow unlike anywhere else in Bali.",
   },
   {
-    image: "/slides2.webp",
-    title: "NyangNyang Beach",
+    image: "/hidden02.jpg",
+    title: "Gunung Payung Secret Beach",
     description:
-      "Escape to golden sands and cliffside views where the ocean meets silence, perfect for reflection and solitude.",
+      "A calm white-sand beach tucked under towering cliffs, perfect for peaceful swims, quiet sunsets, and escaping the island crowds.",
   },
   {
-    image: "/slides3.webp",
-    title: "NyangNyang Beach",
+    image: "/hidden03.jpg",
+    title: "Sambangan Blue Lagoon",
     description:
-      "Escape to golden sands and cliffside views where the ocean meets silence, perfect for reflection and solitude.",
+      "A turquoise natural pool deep inside the rainforest—perfect for cliff jumping, refreshing swims, or relaxing in untouched nature.",
   },
   {
-    image: "/slides3.webp",
+    image: "/hidden04.jpg",
     title: "NyangNyang Beach",
     description:
       "Escape to golden sands and cliffside views where the ocean meets silence, perfect for reflection and solitude.",
