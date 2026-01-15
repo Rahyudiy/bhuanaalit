@@ -2,6 +2,29 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const Footer = () => {
+  const socialLinks = [
+    {
+      icon: "/tw.svg",
+      url: "https://twitter.com/yourusername",
+      name: "Twitter",
+    },
+    {
+      icon: "/lk.svg",
+      url: "https://www.linkedin.com/in/ngurah-yudiantara/",
+      name: "LinkedIn",
+    },
+    {
+      icon: "/fb.svg",
+      url: "https://www.facebook.com/profile.php?id=100090786609574",
+      name: "Facebook",
+    },
+    {
+      icon: "/ig.svg",
+      url: "https://www.instagram.com/ngurahyudiantaraa/",
+      name: "Instagram",
+    },
+  ];
+
   return (
     <footer className="font-poppins">
       {/* TOP SECTION */}
@@ -73,11 +96,16 @@ export const Footer = () => {
 
           {/* Social Media Icons */}
           <div className="flex items-center gap-4 mt-3">
-            {["/tw.svg", "/lk.svg", "/fb.svg", "/ig.svg"].map((icon, i) => (
-              <Link href="/" key={i}>
+            {socialLinks.map((social, i) => (
+              <Link
+                href={social.url}
+                key={i}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Image
-                  src={icon}
-                  alt={`social-icon-${i}`}
+                  src={social.icon}
+                  alt={social.name}
                   width={40}
                   height={40}
                   className="w-8 h-8 object-contain hover:scale-110 transition-transform duration-300"
