@@ -6,6 +6,8 @@ import {
   Montserrat,
   Poppins,
 } from "next/font/google";
+import { Footer } from "./components/Footer";
+import { Navbar } from "./components/Navbar";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -53,7 +55,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} ${montserrat.variable} ${hedvigLettersSerif.variable} antialiased scroll-smooth`}
       >
-        {children}
+        <div className="py-4 md:px-20 px-8">
+          <Navbar></Navbar>
+          {children}
+          <div className="md:mt-[15vw] mt-[40vw]">
+            <Footer></Footer>
+          </div>
+        </div>
       </body>
     </html>
   );

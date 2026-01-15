@@ -1,16 +1,13 @@
 import { Accordions } from "./components/Accordions";
 import { BestDealsSection } from "./components/BestDealsSection";
 import { Carousel } from "./components/Carousel";
-import { Footer } from "./components/Footer";
-import { Navbar } from "./components/Navbar";
 import { Slider } from "./components/Slider";
 import { StoryTellComponent } from "./components/StoryTellComponent";
 import { SubFooter } from "./components/SubFooter";
 
 export default function Home() {
   return (
-    <div className="py-4 md:px-20 px-8">
-      <Navbar></Navbar>
+    <div className="">
       <div className="flex md:flex-row flex-col w-full gap-2 justify-between my-[8%]">
         <div className="font-montserrat font-semibold md:text-4xl text-2xl">
           <h1>Your Journey to</h1>
@@ -80,9 +77,6 @@ export default function Home() {
         <Accordions></Accordions>
       </div>
       <SubFooter></SubFooter>
-      <div className="md:mt-[15vw] mt-[40vw]">
-        <Footer></Footer>
-      </div>
     </div>
   );
 }

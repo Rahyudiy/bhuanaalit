@@ -2,40 +2,15 @@
 
 import Image from "next/image";
 import { useEffect } from "react";
+import { destinations } from "../../data/destinations";
 import { revealAnimation } from "../lib/gsap";
 import { Card } from "./Card";
-
-const CardProps = [
-  {
-    image: "/hidden01.jpg",
-    title: "Tukad Cepung Waterfall",
-    description:
-      "A surreal waterfall hidden inside a cave where sunlight beams slice through mist, creating a heavenly glow unlike anywhere else in Bali.",
-  },
-  {
-    image: "/hidden02.jpg",
-    title: "Gunung Payung Secret Beach",
-    description:
-      "A calm white-sand beach tucked under towering cliffs, perfect for peaceful swims, quiet sunsets, and escaping the island crowds.",
-  },
-  {
-    image: "/hidden03.jpg",
-    title: "Sambangan Blue Lagoon",
-    description:
-      "A turquoise natural pool deep inside the rainforest—perfect for cliff jumping, refreshing swims, or relaxing in untouched nature.",
-  },
-  {
-    image: "/hidden04.jpg",
-    title: "NyangNyang Beach",
-    description:
-      "Escape to golden sands and cliffside views where the ocean meets silence, perfect for reflection and solitude.",
-  },
-];
 
 export const BestDealsSection = () => {
   useEffect(() => {
     revealAnimation();
   }, []);
+  const CardProps = destinations.slice(0, 4);
 
   return (
     <div className="md:flex-row flex-col flex w-full items-center justify-center gap-10 reveal">
