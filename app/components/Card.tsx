@@ -12,8 +12,8 @@ interface CardProps {
 export const Card = ({ slug, image, title, description }: CardProps) => {
   return (
     <div className="">
-      <Link key={slug} href={`/details/${slug}`}>
-        <div className="w-fit md:min-w-fit min-w-full flex flex-col gap-2 group">
+      <Link key={slug} href={`/explore/${slug}`}>
+        <div className="w-fit sm:min-w-fit min-w-[300px] flex flex-col gap-2 group">
           <Image
             src={image}
             width={1000}

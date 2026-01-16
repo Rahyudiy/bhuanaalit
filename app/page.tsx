@@ -57,10 +57,10 @@ export default function Home() {
           <Slider></Slider>
         </div>
       </div>
-      <div className="md:mb-[15vw] mb-[40vw]">
+      <div className="md:mb-[15vw] mb-[40vw] reveal">
         <StoryTellComponent></StoryTellComponent>
       </div>
-      <div className="md:mb-[15vw] mb-[40vw]">
+      <div className="md:mb-[15vw] mb-[40vw] reveal">
         <div className="text-center flex-col gap-2 flex w-full items-center justify-center">
           <div className="">
             <h1 className="md:text-4xl text-2xl  font-poppins font-semibold">
