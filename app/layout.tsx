@@ -63,6 +63,10 @@ export const metadata: Metadata = {
 
   metadataBase: new URL("https://bhuanaalit.vercel.app"),
 
+  alternates: {
+    canonical: "https://bhuanaalit.vercel.app/",
+  },
+
   openGraph: {
     title: "BhuanaAlit — Hidden Gems of Bali",
     description:
