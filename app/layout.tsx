@@ -52,6 +52,7 @@ export const metadata: Metadata = {
   description:
     "Discover Bali’s hidden gems — secret waterfalls, untouched beaches, cultural villages, and authentic local experiences beyond the crowds.",
   keywords: [
+    "BhuanaAlit",
     "Hidden Bali",
     "Bali hidden gems",
     "Bali waterfalls",
@@ -59,12 +60,14 @@ export const metadata: Metadata = {
     "Explore Bali",
     "Bali travel guide",
   ],
-  metadataBase: new URL("https://bhunaalit.com"),
+
+  metadataBase: new URL("https://bhuanaalit.vercel.app"),
+
   openGraph: {
     title: "BhuanaAlit — Hidden Gems of Bali",
     description:
       "Explore untouched destinations, waterfalls, secret beaches, and authentic culture across Bali.",
-    url: "https://bhunaalit.com",
+    url: "https://bhuanaalit.vercel.app",
     siteName: "BhuanaAlit",
     images: [
       {
@@ -77,6 +80,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "BhuanaAlit — Hidden Gems of Bali",
@@ -84,9 +88,14 @@ export const metadata: Metadata = {
       "Explore Bali beyond the crowds. Waterfalls, beaches, and authentic cultural escapes.",
     images: ["/og-cover.jpg"],
   },
+
   robots: {
     index: true,
     follow: true,
+  },
+
+  verification: {
+    google: "5uKXbybr2JBzhy2fD4uaQadqrGyG7Ra2kcWfCp3RrqU",
   },
 };
 
